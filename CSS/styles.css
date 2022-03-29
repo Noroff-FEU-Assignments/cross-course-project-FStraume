@@ -46,10 +46,23 @@ nav li {
 .products h3 {
     font-family: "Bodoni MT", Verdana, Geneva, Tahoma, sans-serif;
     color: #010D26;
-    font-size: 1.5em;
+    font-size: 23px;
     margin: 0%;
 }
 
+.products p {
+    font-family: "Bodoni MT", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    margin: 0%;
+}
+
+.products hr {
+    margin: 3px 25px;
+}
+
+h2 {
+    font-size: 49px ;
+}
 
 /* Links */
 
@@ -59,6 +72,7 @@ nav li {
 
 a {
     text-decoration: none;
+    color: #5BB5D9;
 }
 
 .active {
@@ -83,11 +97,17 @@ a {
     font-size: 2.5em;
 }
 
+
+
 h2,
 h4,
 .view_all_cta {
     text-align: center;
     margin: 0px;
+}
+
+.divider {
+    margin: 0px 100px;
 }
 
 .products_frontpage {
@@ -100,7 +120,8 @@ h4,
 
 .products_frontpage h2,
 .view_all_cta,
-h4 {
+h4,
+.divider {
     grid-column: -1/1;
 }
 
@@ -127,4 +148,7 @@ h4 {
 .img_text {
     position: absolute;
     font-size: 36px;
+    font-family: "Bodoni MT", Verdana, Geneva, Tahoma, sans-serif;
+    color: #010D26;
+    font-weight: bold;
 }
