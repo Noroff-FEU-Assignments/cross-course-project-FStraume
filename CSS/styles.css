@@ -1,27 +1,49 @@
 @font-face {
     font-family: "Bodoni MT";
-    src: url(../fonts/BodoniModa-VariableFont_opsz\,wght.ttf) format("truetype");
+    src: url(../fonts/BodoniModa-VariableFont_opsz,wght.ttf) format("truetype");
+}
+
+body {
+    font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.img_text {
+ font-family: "Bodoni MT";
 }
 
 header,
 footer {
     background-color: #010D26;
     color: #fff;
+    width: 100%;
 }
 
 header {
     display: flex;
+    position: relative;
     align-items: center;
 }
 
 footer {
     text-align: center;
+    margin-top: 10%;
 }
 
 header a {
     color: #fff;
     padding: 20px;
 }
+
+.shopping_cart {
+    position: absolute;
+    right: 5%;
+}
+
 
 nav ul {
     padding: 0px;
@@ -30,6 +52,7 @@ nav ul {
 nav li {
     display: inline-block;
 }
+
 
 .products,
 .product_catagories {
@@ -44,14 +67,12 @@ nav li {
 }
 
 .products h3 {
-    font-family: "Bodoni MT", Verdana, Geneva, Tahoma, sans-serif;
     color: #010D26;
     font-size: 23px;
     margin: 0%;
 }
 
 .products p {
-    font-family: "Bodoni MT", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 19px;
     margin: 0%;
 }
@@ -60,7 +81,8 @@ nav li {
     margin: 3px 25px;
 }
 
-h2 {
+h2,
+h4 {
     font-size: 49px ;
 }
 
@@ -79,58 +101,73 @@ a {
     text-decoration: underline;
 }
 
-
+a:hover {
+    text-decoration: underline;
+}
 
 /*Front page */
 
+#heading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#heading:before,
+#heading:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+    color: #ccc;
+}
+
+#heading:after {
+    margin: 0 0 0 20px;
+}
+
+
 .welcome {
     background-image: url(../IMAGES/background_img.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     height: 400px;
+    width: 100%;
     background-repeat: no-repeat;
 }
 
 .welcome_content {
     position:absolute;
-    top: 100px;
-    left: 645px;
     font-size: 2.5em;
-}
-
-
-
-h2,
-h4,
-.view_all_cta {
-    text-align: center;
-    margin: 0px;
-}
-
-.divider {
-    margin: 0px 100px;
 }
 
 .products_frontpage {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 10px auto;
     grid-gap: 30px;
 }
 
-.products_frontpage h2,
+h2,
 .view_all_cta,
-h4,
-.divider {
+h4 {
     grid-column: -1/1;
+    text-align: center;
+    margin: 0px;
 }
 
 .view_catagories {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
-    margin: 50px auto;
-    grid-gap: 30px;
+    margin: 10px auto;
+    grid-gap: 8px 30px;
     text-align: center;
 }
 
@@ -148,7 +185,7 @@ h4,
 .img_text {
     position: absolute;
     font-size: 36px;
-    font-family: "Bodoni MT", Verdana, Geneva, Tahoma, sans-serif;
     color: #010D26;
     font-weight: bold;
 }
+
