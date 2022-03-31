@@ -27,6 +27,7 @@ header {
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: space-between;
 }
 
 footer {
@@ -39,20 +40,38 @@ header a {
     padding: 20px;
 }
 
-.shopping_cart {
-    position: absolute;
-    right: 5%;
+nav {
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 81px;
+    background-color: #010D26;
+    z-index: 1000;
+    right: 0px;
+    float: right;
 }
-
 
 nav ul {
     padding: 0px;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
 }
 
+header label {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+
+}
 
 .products,
 .product_catagories {
@@ -90,6 +109,7 @@ h4 {
 
 .homebutton {
     font-size: 35px;
+    margin-left: 20px;
 }
 
 a {
@@ -131,6 +151,7 @@ a:hover {
 
 .welcome {
     background-image: url(../IMAGES/background_img.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,7 +169,7 @@ a:hover {
 
 .products_frontpage {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     max-width: 1200px;
     margin: 10px auto;
     grid-gap: 30px;
@@ -164,7 +185,7 @@ h4 {
 
 .view_catagories {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     max-width: 1200px;
     margin: 10px auto;
     grid-gap: 8px 30px;
@@ -176,6 +197,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 15px 45px;
 }
 
 .product_catagories img {
@@ -189,3 +211,39 @@ h4 {
     font-weight: bold;
 }
 
+/* Media Queries */
+
+@media (min-width: 600px) {
+    .products_frontpage,
+    .view_catagories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product_catagories {
+        margin: 0px;
+    }
+}
+
+@media (min-width: 950px) {
+    .products_frontpage,
+    .view_catagories {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        display: block;
+        position: static;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    header label {
+        display: none;
+    }
+}
