@@ -16,6 +16,10 @@ h5,
  font-family: "Bodoni MT";
 }
 
+h1 {
+    font-size: .5em;
+}
+
 header,
 footer {
     background-color: #010D26;
@@ -102,7 +106,7 @@ header label {
 
 h2,
 h4 {
-    font-size: 49px ;
+    font-size: 30px ;
 }
 
 /* Links */
@@ -222,6 +226,10 @@ h4 {
     .product_catagories {
         margin: 0px;
     }
+
+    h1 {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 950px) {
@@ -246,4 +254,14 @@ h4 {
     header label {
         display: none;
     }
+
+    h2,
+    h4 {
+    font-size: 49px ;
+    }
+
+    h1 {
+    font-size: 1.5em;
+    }
+
 }
