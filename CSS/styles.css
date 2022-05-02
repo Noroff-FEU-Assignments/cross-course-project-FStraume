@@ -41,7 +41,7 @@ footer {
 
 header a {
     color: #fff;
-    padding: 20px;
+    margin: 20px;
 }
 
 nav {
@@ -51,7 +51,7 @@ nav {
     top: 81px;
     background-color: #010D26;
     z-index: 1000;
-    right: 0px;
+    right: 8px;
     float: right;
 }
 
@@ -119,6 +119,7 @@ h4 {
 a {
     text-decoration: none;
     color: #5BB5D9;
+    padding: 0px;
 }
 
 .active {
@@ -132,6 +133,7 @@ a:hover {
 #hamburger-menu:hover {
     cursor: pointer;
   }
+
 
 /*Front page */
 
@@ -165,7 +167,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 400px;
+    height: 300px;
     width: 100%;
     background-repeat: no-repeat;
 }
@@ -215,14 +217,31 @@ h4 {
 .img_text {
     position: absolute;
     font-size: 36px;
-    color: #010D26;
     font-weight: bold;
 }
+
+.img_text a {
+    color: #010D26;
+}
+
+
+/* Product Page */
+
+.products_productpage {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 10px auto;
+    grid-gap: 60px;
+
+}
+
 
 /* Media Queries */
 
 @media (min-width: 600px) {
     .products_frontpage,
+    .products_productpage,
     .view_catagories {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -234,13 +253,16 @@ h4 {
     h1 {
         font-size: 1em;
     }
+
 }
 
 @media (min-width: 950px) {
     .products_frontpage,
+    .products_productpage,
     .view_catagories {
         grid-template-columns: repeat(4, 1fr);
     }
+
 
     header {
         justify-content: center;
