@@ -42,6 +42,7 @@ footer {
 header a {
     color: #fff;
     margin: 20px;
+    font-size: 20px;
 }
 
 nav {
@@ -233,8 +234,24 @@ h4 {
     max-width: 1200px;
     margin: 10px auto;
     grid-gap: 60px;
-
 }
+
+/* Product spesific page */
+
+
+.product_view img {
+    height: 450px;
+    width: 450px;
+    position: relative;
+    margin: 50px;
+}
+
+.sizes {
+    height: 10%;
+    width: 48px;
+}
+
+
 
 
 /* Media Queries */
@@ -254,6 +271,9 @@ h4 {
         font-size: 1em;
     }
 
+    nav li {
+        padding: 10px;
+    }
 }
 
 @media (min-width: 950px) {
@@ -275,6 +295,7 @@ h4 {
 
     nav li {
         display: inline-block;
+        padding: 0px;
     }
 
     header label {
