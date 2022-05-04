@@ -238,18 +238,37 @@ h4 {
 
 /* Product spesific page */
 
+.productpage_main {
+    display: flex;
+    margin-top: 20px;
+}
 
-.product_view img {
+.product_view,
+.productpage_product_info {
+    flex: 1;
+    margin: 0px;
+}
+
+.product_view_big img {
     height: 450px;
     width: 450px;
     position: relative;
-    margin: 50px;
+    margin: 5px;
 }
 
-.sizes {
-    height: 10%;
+.sizes img {
+    height: 36px;
     width: 48px;
 }
+
+.specs ul {
+    padding: 0px;
+}
+
+.specs ul li {
+    list-style-type: none;
+}
+
 
 
 
