@@ -63,6 +63,7 @@ nav ul {
 
 nav li {
     display: block;
+    padding: 10px;
 }
 
 header label {
@@ -77,6 +78,14 @@ header label {
 #hamburger-menu:checked ~ nav {
     display: block;
 
+}
+
+#shoppingcart {
+    display: block;
+    position: fixed;
+    right: 100px;
+    margin: 0px;
+    top: 30px;
 }
 
 .products,
@@ -362,9 +371,10 @@ h4 {
         font-size: 1em;
     }
 
-    nav li {
-        padding: 10px;
+    #shoppingcart {
+        right: 100px;
     }
+
 }
 
 @media (min-width: 950px) {
@@ -400,6 +410,10 @@ h4 {
 
     h1 {
     font-size: 1.5em;
+    }
+
+    #shoppingcart {
+        right: 3%;
     }
 
 }
