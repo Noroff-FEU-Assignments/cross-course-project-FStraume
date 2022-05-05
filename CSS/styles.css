@@ -36,7 +36,8 @@ header {
 
 footer {
     text-align: center;
-    margin-top: 10%;
+    position: fixed;
+    bottom: 0;
 }
 
 header a {
@@ -239,37 +240,108 @@ h4 {
 /* Product spesific page */
 
 .productpage_main {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 20px;
 }
 
-.product_view,
-.productpage_product_info {
-    flex: 1;
+.productpage_main h1 {
+    font-size: 45px;
+}
+
+.productpage_main h2 {
+    font-size: 20px;
+    float: left;
+    margin-bottom: 10px;
+    grid-column: -1/1;
+}
+
+.product_info h1{
     margin: 0px;
 }
+
+.product_info p {
+    margin: 0px;
+    font-size: 23px;
+}
+
+.product_view_logo {
+    float: right;
+    height: 120px;
+    width: 257px;
+}
+
 
 .product_view_big img {
     height: 450px;
     width: 450px;
-    position: relative;
-    margin: 5px;
+    margin: 5px 0px 0px 100px;
 }
 
-.sizes img {
-    height: 36px;
-    width: 48px;
+.alternate_product_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 450px;
+    margin: 0px 0px 15px 108px;
+    cursor: pointer;
 }
 
-.specs ul {
-    padding: 0px;
+.alternate_product_img img:hover {
+    border: 1px solid #010D26;
 }
 
-.specs ul li {
-    list-style-type: none;
+.alternate_product_img img {
+    height: 100px;
+    width: 100px;
 }
 
+#sizes_text {
+    font-size: 20px;
+    margin: 30px 0px 0px 0px;
+}
 
+.sizes p {
+    float: left;
+    width: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #010D26;
+    text-align: center;
+    margin: 0px 15px 0px 0px;
+}
+
+.sizes p:hover {
+    background-color: #010D26;
+    color: #fff;
+}
+
+.productpage_buttons {
+    float: left;
+    margin: 100px 0px 0px 0px;
+    position: absolute;
+}
+
+.productpage_buttons p {
+    text-align: center
+}
+
+.productpage_buttons img{
+    cursor: pointer;
+}
+
+#cartoptions_spliter {
+    display: flex;
+    justify-content: center;
+}
+
+#cartoptions_spliter:before,
+#cartoptions_spliter:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 8px 5px 0px 2px;
+    flex: 1 0 20px;
+    color: #010D26;
+}
 
 
 
