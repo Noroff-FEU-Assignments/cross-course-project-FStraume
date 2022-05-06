@@ -82,10 +82,10 @@ header label {
 
 #shoppingcart {
     display: block;
-    position: fixed;
+    position: absolute;
     right: 100px;
     margin: 0px;
-    top: 30px;
+    top: 20px;
 }
 
 .products,
@@ -250,7 +250,7 @@ h4 {
 
 .productpage_main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     margin-top: 20px;
 }
 
@@ -276,22 +276,25 @@ h4 {
 
 .product_view_logo {
     float: right;
-    height: 120px;
-    width: 257px;
+    height: 100px;
+    width: 200px;
+    display: none;
 }
 
 
 .product_view_big img {
     height: 450px;
-    width: 450px;
-    margin: 5px 0px 0px 100px;
+    max-width: 450px;
+    width: 100%;
+    margin: 5px 0px 0px 0px;
 }
 
 .alternate_product_img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 450px;
-    margin: 0px 0px 15px 108px;
+    width: 100%;
+    margin: 0px 0px 15px 20px;
     cursor: pointer;
 }
 
@@ -352,6 +355,34 @@ h4 {
     color: #010D26;
 }
 
+/*Checkout Page */
+
+.checkout_items {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout_items > * {
+    flex: 1;
+}
+
+
+.checkout_product {
+    display: grid;
+    grid-template-columns: 200px 600px 200px;
+    margin: 0px;
+    grid-gap: 37px;
+}
+
+.checkout_product p{
+    margin: 0px;
+}
+
+#product_checkout_header {
+    font-size: 30px;
+    margin: 5px 0px;
+}
 
 
 /* Media Queries */
@@ -383,7 +414,10 @@ h4 {
     .view_catagories {
         grid-template-columns: repeat(4, 1fr);
     }
-
+    
+    .productpage_main {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     header {
         justify-content: center;
@@ -415,5 +449,10 @@ h4 {
     #shoppingcart {
         right: 3%;
     }
+
+    .product_view_logo {
+        display: block;
+    }
+
 
 }
