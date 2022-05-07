@@ -15,68 +15,62 @@
     <input type="checkbox" id="hamburger-menu">
     <nav>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="aboutus.html">About Us</a></li>
         <li><a href="costumerservice.html">Costumer Service</a></li>
       </ul>
     </nav>
   </header>
-  <main class="checkout_main">
+  <main>
     <section class="welcome">
       <div class="welcome_content">
         <h1>Checkout</h1>
       </div>
     </section>
-    <section class="checkout_items">
-      <div class="checkout_product">
-        <img src="/IMAGES/product_img.jpg" alt="Picture of the item">
-        <div class="product_selected_values">
-          <p id="product_checkout_header">Rain Jacket</p>
-          <p>Size - Large</p>
-          <p>Color - Black</p>
-      </div>
-      <div class="product_value_info">
-        <p>Prize 299$</p>
-        <p>Amount 1</p>
-      </div>
-      <div class="checkout_product">
-        <img src="/IMAGES/product_img.jpg" alt="Picture of the item">
-        <div class="product_selected_values">
-          <p id="product_checkout_header">Rain Jacket</p>
-          <p>Size - Large</p>
-          <p>Color - Black</p>
-      </div>
-      <div class="product_value_info">
-        <p>Prize 299$</p>
-        <p>Amount 1</p>
-      </div>
-      <div class="checkout_product">
-        <img src="/IMAGES/product_img.jpg" alt="Picture of the item">
-        <div class="product_selected_values">
-          <p id="product_checkout_header">Rain Jacket</p>
-          <p>Size - Large</p>
-          <p>Color - Black</p>
-      </div>
-      <div class="product_value_info">
-        <p>Prize 299$</p>
-        <p>Amount 1</p>
-      </div>
-      <div class="checkout_detail">
-        <p>Checkout Detail</p>
-      <table id="product_summary">
-        <tr>
-          <td>Rain Jacket</td>
-          <td>Rain Jacket</td>
-          <td>Rain Jacket</td>
-        </tr>
-        <tr>
-          <td>299$</td>
-          <td>299$</td>
-          <td>299$</td>
-        </tr>
-      </table>
-      </div>
+    <section class="checkout_page">
+      <section class="checkout_products">
+        <div class="checkout_item">
+            <img src="/IMAGES/product_img.jpg" alt="pictrue of selected product">
+            <h2 class="item_info">Rain Jacket</h2>
+            <p class="item_info">Size-Large</p>
+            <p class="item_info">Color-Black</p>
+          </div>
+          <div class="checkout_item">
+            <img src="/IMAGES/product_img.jpg" alt="pictrue of selected product">
+            <h2 class="item_info">Rain Jacket</h2>
+            <p class="item_info">Size-Large</p>
+            <p class="item_info">Color-Black</p>
+          </div>
+          <div class="checkout_item">
+            <img src="/IMAGES/product_img.jpg" alt="pictrue of selected product">
+            <h2 class="item_info">Rain Jacket</h2>
+            <p class="item_info">Size-Large</p>
+            <p class="item_info">Color-Black</p>
+          </div>
+        </section>
+        <section class="checkout">
+          <h3>Checkout Details</h3>
+          <section class="checkout_details">
+            <div class="checkout_item_name">
+              <p>Rain Jacket</p>
+              <p>Rain Jacket</p>
+              <p>Rain Jacket</p>
+            </div>
+            <div class="checkout_item_price">
+              <p>Price 299$</p>
+              <p>Price 299$</p>
+              <p>Price 299$</p>
+            </div>
+            <div class="total_summary">
+              <p>Total</p>
+            </div>
+            <div class="total_summary_price">
+              <p>897$</p>
+            </div>
+          </section>
+          <a href="checkout_success.html"><img src="/IMAGES/Group 46.jpg" class="continue_cta" alt="continue button" ></a>
+        </section>
     </section>
   </main>
   <footer>Copyright &copy;</footer>
