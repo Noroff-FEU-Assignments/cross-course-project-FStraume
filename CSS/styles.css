@@ -185,7 +185,7 @@ a:hover {
 
 .welcome_content {
     position:absolute;
-    font-size: 2.5em;
+    font-size: 60px;
 }
 
 .products_frontpage {
@@ -438,9 +438,9 @@ h4 {
 }
 
 
-.aboutus_img {
-    width: 50%;
-    margin: 50px auto;
+.aboutus_img img {
+    width: 100%;
+    margin: auto;
     
 
 }
@@ -488,9 +488,15 @@ h4 {
         font-size: 30px;
     }
 
-    .aboutus_img {
+    .aboutus_img img{
         width: 100%;
-        margin: 30px 99px;
+        margin: auto;
+    }
+
+    .welcome_content {
+        position:absolute;
+        font-size: 40px;
+    }
     
 }
 
@@ -568,7 +574,11 @@ h4 {
         display: block;
     }
 
-    .aboutus h2, h3 {
+    .aboutus h2 {
+        text-align: left;
+    }
+
+    .aboutus_text2 h3{
         text-align: left;
     }
 
