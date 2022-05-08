@@ -80,6 +80,11 @@ header label {
 
 }
 
+.product_catagories img {
+    filter: blur(1.5px);
+    border: 1px solid #010D26;
+}
+
 #shoppingcart {
     display: block;
     position: absolute;
@@ -251,6 +256,7 @@ h4 {
     max-width: 1200px;
     margin: 10px auto;
     grid-gap: 60px;
+    margin-bottom: 50px;
 }
 
 .products {
