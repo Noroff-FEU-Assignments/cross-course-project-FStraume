@@ -129,9 +129,15 @@ h4 {
 
 a {
     text-decoration: none;
-    color: #2192bf;
+    color: #5BB5D9;
     padding: 0px;
-    font-size: 18px;
+}
+
+.show_more_cta,
+.view_all_cta,
+.shop_now {
+    font-size: 20px;
+    color: #22647e;
 }
 
 .active {
