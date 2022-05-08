@@ -129,8 +129,9 @@ h4 {
 
 a {
     text-decoration: none;
-    color: #5BB5D9;
+    color: #2192bf;
     padding: 0px;
+    font-size: 18px;
 }
 
 .active {
@@ -276,12 +277,12 @@ h4 {
     grid-column: -1/1;
 }
 
-.product_info h1{
+.product_info h1,
+.product_info p {
     margin: 0px;
 }
 
 .product_info p {
-    margin: 0px;
     font-size: 23px;
 }
 
