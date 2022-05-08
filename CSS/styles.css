@@ -342,9 +342,30 @@ h4 {
     color: #fff;
 }
 
+.selector {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 15px 0px 0px 0px;
+}
+
+.selector > * {
+    flex: 1;
+}
+
+#size,
+#color {
+    width: 200px;
+}
+
+.sizes,
+#sizes_text {
+    display: none;
+}
+
 .productpage_buttons {
     float: left;
-    margin: 100px 0px 0px 0px;
+    margin: 215px 0px 0px 0px;
     position: absolute;
 }
 
@@ -371,7 +392,7 @@ h4 {
 }
 
 .productspesific_main h3 {
-    margin: 287px 0px 0px 0px;
+    margin: 450px 0px 0px 0px;
 }
 
 .product_specs {
@@ -704,4 +725,22 @@ textarea {
         height: 100%;
     }
 
+    #size,
+    #size_label {
+        display: none;
+    }
+
+    .sizes,
+    #sizes_text {
+    display: block;
+    }
+
+    .selector {
+        position: absolute;
+        margin: 50px 0px 0px 0px;
+    }
+
+    .productpage_buttons {
+        margin: 160px 0px 0px 0px;
+    }
 }
