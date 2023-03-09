@@ -5,6 +5,8 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
+const popupheader = document.querySelector("#popupheader")
+const popcontainer = document.querySelector(".popcontainer")
 
 
 
@@ -15,7 +17,7 @@ const messageError = document.querySelector("#messageError");
     
         if (checkLength(name.value, 0) === true){
             nameError.style.display = "none";
-            successfullCheck(name);
+            console.log(name.value)
         }
         else {
             nameError.style.display = "block";
@@ -23,7 +25,6 @@ const messageError = document.querySelector("#messageError");
     
         if(emailValidation(email.value) === true) {
             emailError.style.display = "none";
-            successfullCheck(email);
         }
         else {
             emailError.style.display = "block";
@@ -31,11 +32,16 @@ const messageError = document.querySelector("#messageError");
     
         if (checkLength(message.value, 3) === true){
             messageError.style.display = "none";
-            successfullCheck(message);
         }
         else {
             messageError.style.display = "block";
-        } 
+        }
+        
+        if (checkLength(name.value, 0) & checkLength(message.value, 3) & emailValidation(email.value) === true) {
+            console.log("success")
+            popupheader.innerHTML = "Dear " + name.value;
+            popcontainer.style.display = "flex";
+        }
     }
     
     form.addEventListener("submit", formValidation);
