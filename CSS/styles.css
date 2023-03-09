@@ -220,7 +220,7 @@ h4 {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 50px auto;
     grid-gap: 8px 30px;
     text-align: center;
 }
@@ -608,6 +608,20 @@ textarea {
     color: red;
     font-size: 0.9rem;
     margin-top: 2px;
+}
+
+.popcontainer {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    top: 388px;
+    left: 559px;
 }
 
 
