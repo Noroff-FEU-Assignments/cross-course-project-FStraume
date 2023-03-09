@@ -603,6 +603,13 @@ textarea {
     flex-direction: column;
 }
 
+.formerror {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
 
 /* Media Queries */
 
