@@ -21,7 +21,10 @@
 <body>
   <header>
     <a href="index.html" class="homebutton">RAINYDAYS</a>
+    <a id="wishlist_icon">wishlist</a>
+    <div class="wishlistcounter">1</div>
     <a href="checkout.html"><img src="/IMAGES/Shopping-Cart-01-256.png" id="shoppingcart" alt="shopping cart - checkout"></a>
+    <div class="itemcounter">1</div>
     <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
     <input type="checkbox" id="hamburger-menu">
     <nav>
@@ -49,8 +52,8 @@
     <section class="productpage_product_info">
       <img src="/IMAGES/RainyDays_Logo.jpg" class="product_view_logo" alt="Rainydays Logo">
       <div class="product_info">
-        <h1>Rain Jacket</h1>
-        <p>Price $299</p>
+        <h1 class="product_name">Rain Jacket</h1>
+        <p class="product_price">$299</p>
     </div>
     <p id="sizes_text">Availabe sizes</p>
     <div class="sizes">
@@ -84,9 +87,9 @@
       </div>
     </div>
     <div class="productpage_buttons">
-      <a href="checkout.html"><img src="/IMAGES/Component 1 – 1.jpg" alt="Add to cart button"></a>
+      <button class="productpage_ctaaddtocart" onclick="addToCart()">Add to cart</button>
       <p id="cartoptions_spliter">OR</p>
-      <img src="/IMAGES/Component 1 – 2.jpg" alt="Add to cart button">
+      <button class="productpage_ctaaddtowishlist" onclick="addToWishlist()">Add to wishlist</button>
     </div>
     </section>
     </section>
@@ -111,5 +114,6 @@
     </section>
   </main>
   <footer>Copyright &copy;</footer>
+  <script src="/JS/product_spesific.js"></script>
 </body>
 </html>
