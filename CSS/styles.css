@@ -475,6 +475,8 @@ h4 {
 
 .product_specs_list ul {
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .about_product p {
