@@ -387,6 +387,11 @@ h4 {
     color: #fff;
 }
 
+.size_isActive {
+    background-color: #010D26;
+    color: #fff;
+}
+
 .selector {
     display: flex;
     flex-direction: column;
@@ -493,6 +498,9 @@ h4 {
     margin: 0px;
 }
 
+.product_id {
+    display: none;
+}
 
 /*Checkout Page */
 
