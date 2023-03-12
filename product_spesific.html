@@ -52,29 +52,19 @@
     <section class="productpage_product_info">
       <img src="/IMAGES/RainyDays_Logo.jpg" class="product_view_logo" alt="Rainydays Logo">
       <div class="product_info">
-        <h1 class="product_name">Rain Jacket</h1>
-        <p class="product_price">$299</p>
+        <h1 class="product_name"></h1>
+        <p class="product_price"></p>
+        <p class="product_id">100</p>
     </div>
     <p id="sizes_text">Availabe sizes</p>
     <div class="sizes">
-        <p>XS</p>
-        <p>S</p>
-        <p>M</p>
-        <p>L</p>
-        <p>XL</p>
+        <p class="xs">XS</p>
+        <p class="s">S</p>
+        <p class="m">M</p>
+        <p class="l">L</p>
+        <p class="xl">XL</p>
     </div>
     <div class="selector">
-      <label for="size" id="size_label">Select Size</label>
-      <div class="select_size">
-        <select id="size">
-          <option value="_blank"></option>
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-      </select>
-      </div>
       <label for="color">Select Color</label> 
       <div class="select_color">
         <select id="color">
@@ -87,9 +77,9 @@
       </div>
     </div>
     <div class="productpage_buttons">
-      <button class="productpage_ctaaddtocart" onclick="addToCart()">Add to cart</button>
+      <button class="productpage_ctaaddtocart" onclick="cartPusher()">Add to cart</button>
       <p id="cartoptions_spliter">OR</p>
-      <button class="productpage_ctaaddtowishlist" onclick="addToWishlist()">Add to wishlist</button>
+      <button class="productpage_ctaaddtowishlist" onclick="wishlistPusher()">Add to wishlist</button>
     </div>
     </section>
     </section>
@@ -114,6 +104,8 @@
     </section>
   </main>
   <footer>Copyright &copy;</footer>
+  <script src="/JS/productobject.js"></script>
   <script src="/JS/product_spesific.js"></script>
+  <script src="/JS/checkout.js"></script>
 </body>
 </html>
