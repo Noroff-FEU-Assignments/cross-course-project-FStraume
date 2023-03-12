@@ -1,52 +1,56 @@
-const buttonAddToCart = document.querySelector(".productpage_ctaaddtocart");
-const buttonAddToWishlist = document.querySelector(".productpage_ctaaddtowishlist");
-const name = document.querySelector(".product_name");
-const price = document.querySelector(".product_price");
-const id = document.querySelector(".product_id")
-const itemcounter = document.querySelector(".itemcounter")
-const wishlistcounter = document.querySelector(".wishlistcounter")
-const checkoutSection = document.querySelector(".checkout_products")
 const productInfo = document.querySelector(".product_info")
+const itemPicture = document.querySelector(".product_view_big")
+const altItemPictures = document.querySelector(".alternate_product_img")
+const productButtons = document.querySelector(".productpage_buttons")
 
 
 
-name.innerHTML = product.name;
-price.innerHTML = product.price;
 
-//----------------------------------------------------------------//
+//---------------------------Display Item-----------------------------------------//
 
-const cart = []
+const queryString = document.location.search;
 
-const cartlogger = []
-const wishlistlogger = []
+const parameters = new URLSearchParams(queryString);
 
-function cartPusher() {
-        cartlogger.push(productInfo)
-        cart.push(productInfo)
-        itemloggerCart()
-        buttonAddToCart.innerHTML = "Added to cart"
-        addToCart()
-}
+const idParam = parameters.get("id");
 
-function itemloggerCart() {
-    for (let i = 0; i < cartlogger.length; i++) {
-        itemcounter.style.display = "flex";
-        itemcounter.innerHTML = cartlogger.length; 
+const url = `/product_spesific.html?id=${idParam};`;
+
+const spesificId = idParam
+
+console.log(product[spesificId])
+
+productInfo.innerHTML += `
+    <h1 class="product_name">${product[spesificId].name}</h1>
+    <p class="product_price">${product[spesificId].price}</p>
+    <p class="product_id">${product[spesificId].id}</p>`
+
+itemPicture.innerHTML += `<img src="${product[spesificId].image}" alt="Picture of the selected jacket">`
+altItemPictures.innerHTML += `<img src="${product[spesificId].image}" alt="Picture of the selected jacket">
+<img src="${product[spesificId].image}" alt="Picture of the selected jacket">
+<img src="${product[spesificId].image}" alt="Picture of the selected jacket">
+<img src="${product[spesificId].image}" alt="Picture of the selected jacket">`
+
+productButtons.innerHTML += `
+<button class="productpage_ctaaddtocart" onclick="addToCart(${product[spesificId].id})">Add to cart</button>
+<p id="cartoptions_spliter">OR</p>
+<button class="productpage_ctaaddtowishlist"  onclick="addToCart(${product[spesificId].id})">Add to wishlist</button>`
+
+
+
+//---------------------------Add to Cart-----------------------------------------//
+
+let cart = [];
+
+function addToCart(id) {
+    if(cart.some((item) => item.id === id)){
+        alert("Product already in cart")
     }
-}
-
-function wishlistPusher() {
-    wishlistlogger.push(name.innerHTML)
-        itemloggerWishlist()
-        buttonAddToWishlist.innerHTML = "Added to cart"
-}
-
-function itemloggerWishlist() {
-    for (let i = 0; i < wishlistlogger.length; i++) {
-        wishlistcounter.style.display = "flex";
-        wishlistcounter.innerHTML = wishlistlogger.length; 
+    else{
+        const item = product.find((product) => product.id === id)
+        cart.push(item)
+    
+        
     }
-} 
-
-//----------------------------------------------------------------//
-
+    
+}
