@@ -9,6 +9,7 @@ for (let i = 0; i < product.length; i++) {
     <h2 class="item_info">${product[i].name}</h2>
     <p class="item_info">Black</p>
     <p class="item_info">XL</p>
+    <button class="remove_btn">Remove</button>
   </div>`
 
   cartItemName.innerHTML += `<p>${product[i].name}</p>`
