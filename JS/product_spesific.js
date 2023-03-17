@@ -34,7 +34,7 @@ altItemPictures.innerHTML += `<img src="${product[spesificId].image}" alt="Pictu
 productButtons.innerHTML += `
 <button class="addtocart" onclick="addToCart()">
   <div class="pretext">Add to cart</div>
-  <div class="pretext donecart">
+  <div class="pretext doneCart">
 <div class="posttext"><i class="fas fa-check"></i> ADDED</div>
   </div>
 </button>
@@ -42,7 +42,7 @@ productButtons.innerHTML += `
 
 <button class="addtowishlist" onclick="addToWishlist()">
 <div class="pretext">Add to wishlist</div>
-  <div class="pretext donewishlist">
+  <div class="pretext doneWishlist">
   <div class="posttext"><i class="fas fa-check"></i>ADDED</div>
   </div> 
 </button>`
@@ -51,57 +51,57 @@ productButtons.innerHTML += `
 //---------------------------Add to Cart-----------------------------------------//
 //---------Button Inspiration https://codepen.io/ankushc/pen/ReQJrg -------------//
 const addToCartButton = document.querySelector(".productpage_ctaaddtocart")
-const itemcounter = document.querySelector(".itemcounter")
-const buttoncart = document.querySelector(".addtocart");
-const buttonwishlist = document.querySelector(".addtowishlist");
-const donecart = document.querySelector(".donecart");
-const donewishlist = document.querySelector(".donewishlist");
-const wishlistcounter = document.querySelector(".wishlistcounter")
+const itemCounter = document.querySelector(".itemCounter")
+const buttonCart = document.querySelector(".addtocart");
+const buttonWishlist = document.querySelector(".addtowishlist");
+const doneCart = document.querySelector(".doneCart");
+const doneWishlist = document.querySelector(".doneWishlist");
+const wishlistCounter = document.querySelector(".wishlistCounter")
 
 var cart = 1;
 var wishlist = 1;
-console.log(buttoncart);
+console.log(buttonCart);
 let added = false;
-buttoncart.addEventListener('click',()=>{
+buttonCart.addEventListener('click',()=>{
   if(added){
-    donecart.style.transform = "translate(-110%) skew(-40deg)";
+    doneCart.style.transform = "translate(-110%) skew(-40deg)";
     added = false;    
-    itemcounter.style.display = "none";
-    itemcounter.value = --cart;
+    itemCounter.style.display = "none";
+    itemCounter.value = --cart;
 
   }
   else{
-    donecart.style.transform = "translate(0px)";
+    doneCart.style.transform = "translate(0px)";
     added = true;
-    itemcounter.style.display = "flex";
-    itemcounter.value = ++cart;
+    itemCounter.style.display = "flex";
+    itemCounter.value = ++cart;
 
   }
     
 });
 
-buttonwishlist.addEventListener('click',()=>{
+buttonWishlist.addEventListener('click',()=>{
     if(added){
-        donewishlist.style.transform = "translate(-110%) skew(-40deg)";
+        doneWishlist.style.transform = "translate(-110%) skew(-40deg)";
       added = false;
-      wishlistcounter.style.display = "none";
-      wishlistcounter.value = --wishlist;
+      wishlistCounter.style.display = "none";
+      wishlistCounter.value = --wishlist;
     }
     else{
-        donewishlist.style.transform = "translate(0px)";
+        doneWishlist.style.transform = "translate(0px)";
       added = true;
-      wishlistcounter.style.display = "flex";
-      wishlistcounter.value = ++wishlist;
+      wishlistCounter.style.display = "flex";
+      wishlistCounter.value = ++wishlist;
     }
       
   });
   
   function addToCart() {
-      itemcounter.innerHTML = `<p>${cart}</p>`
+      itemCounter.innerHTML = `<p>${cart}</p>`
   }
 
   function addToWishlist() {
-    wishlistcounter.innerHTML = `<p>${cart}</p>`
+    wishlistCounter.innerHTML = `<p>${cart}</p>`
 }
 
 

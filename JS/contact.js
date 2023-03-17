@@ -5,8 +5,8 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
-const popupheader = document.querySelector("#popupheader")
-const popcontainer = document.querySelector(".popcontainer")
+const popUpHeader = document.querySelector("#popupheader")
+const popContainer = document.querySelector(".popcontainer")
 
 
 
@@ -39,8 +39,8 @@ const popcontainer = document.querySelector(".popcontainer")
         
         if (checkLength(name.value, 0) & checkLength(message.value, 3) & emailValidation(email.value) === true) {
             console.log("success")
-            popupheader.innerHTML = "Dear " + name.value;
-            popcontainer.style.display = "flex";
+            popUpHeader.innerHTML = "Dear " + name.value;
+            popContainer.style.display = "flex";
         }
     }
     

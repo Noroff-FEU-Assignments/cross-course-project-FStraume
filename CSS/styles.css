@@ -93,12 +93,12 @@ header label {
     top: 29px;
 }
 
-.wishlistcounter {
+.wishlistCounter {
     right: 132px;
     top: 31px;
 }
 
-.itemcounter {
+.itemCounter {
     right: 89px;
     top: 19px;
 }
@@ -111,8 +111,8 @@ header label {
     top: 20px;
 }
 
-.itemcounter,
-.wishlistcounter {
+.itemCounter,
+.wishlistCounter {
     display: none;
     position: absolute;
     margin: 0px;
@@ -749,8 +749,8 @@ textarea {
   i{
     margin-right:10px;
   }
-  .donecart,
-  .donewishlist{
+  .doneCart,
+  .doneWishlist{
     background:#be2edd;
     position:absolute;
     width:100%;
