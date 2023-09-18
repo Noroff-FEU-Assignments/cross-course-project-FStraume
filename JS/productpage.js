@@ -1,4 +1,4 @@
-const displayProducts = document.querySelector(".products_productpage")
+/*const displayProducts = document.querySelector(".products_productpage")
 
 
 
@@ -12,3 +12,4 @@ for (let i = 0; i < product.length; i++) {
     <a href="product_spesific.html?id=${product[i].id}" class="show_more_cta">Show More</a>
     </div>`
 }
+*/

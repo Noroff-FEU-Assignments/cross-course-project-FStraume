@@ -282,6 +282,8 @@ h4 {
 .imgsize {
     height: 205px;
     width: 205px;
+    mix-blend-mode: multiply;
+
 }
 
 

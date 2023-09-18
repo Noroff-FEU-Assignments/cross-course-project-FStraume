@@ -1,4 +1,4 @@
-const product = [ {name:"Rain Jacket", 
+/*const product = [ {name:"Rain Jacket", 
                 price:"$299", 
                 id:00,
                 image: "/IMAGES/product_img.jpg"},
@@ -21,3 +21,4 @@ const product = [ {name:"Rain Jacket",
                 image: "/IMAGES/Ovik_Re_Wool_Sweater_81891-215.jpg"
                 },
             ]
+*/
