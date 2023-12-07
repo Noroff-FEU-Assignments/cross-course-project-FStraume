@@ -1,6 +1,6 @@
 # RainyDays
 
-![Alt text](<img\screenshot.png>)
+![Alt text](<images/screenshot.png>)
 
 Rainydays is a shopping page where users can buy winter clothing, built during the corss-course project.
 
