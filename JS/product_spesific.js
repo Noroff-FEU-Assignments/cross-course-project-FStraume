@@ -11,7 +11,6 @@ const queryString = document.location.search;
 const parameters = new URLSearchParams(queryString);
 
 const idParam = parameters.get("id");
-console.log(idParam)
 const url = "https://straume.online/RainyDays/wp-json/wc/v3/products/" + idParam + "?consumer_key=ck_2bdffcb37cf6f3f699baa88b16b5f2d469e83d09&consumer_secret=cs_010ab9e71badb58468674bb1b48de818c406f97f";
 
 const spesificId = idParam
@@ -21,10 +20,7 @@ async function fetchProd() {
 try {
 const response = await fetch(url);
 const spesificId = await response.json();
-
-console.log(spesificId)
-
-console.log(spesificId)    
+ 
 createHTML(spesificId)
 }
 catch(error) {
